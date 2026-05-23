@@ -1,0 +1,18 @@
+{
+  "name": "shri-rameshwar-mahadev-temple",
+  "version": "1.0.0",
+  "description": "Shri Rameshwar Mahadev Temple - Official Website with Admin Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express-session": "^1.18.0",
+    "bcryptjs": "^2.4.3"
+  }
+}

@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Shri Rameshwar Mandir | Temple of Mahadev - Divine Abode</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fefaf5;
+      color: #2c2418;
+      scroll-behavior: smooth;
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .logo-text, .hero-title, .section-title {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ========== HEADER ========== */
+    header {
+      background: rgba(255, 250, 243, 0.98);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+      color: #c97e2c;
+      animation: gentlePulse 2s infinite;
+    }
+
+    @keyframes gentlePulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .logo-text h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #8b3c1c;
+      line-height: 1.2;
+    }
+
+    .logo-text p {
+      font-size: 0.65rem;
+      letter-spacing: 1px;
+      font-weight: 600;
+      color: #b55b2c;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #3e2a21;
+      transition: all 0.3s;
+      font-size: 0.95rem;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: #c97e2c;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #c97e2c;
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .donate-btn {
+      background: #d98c2b;
+      color: white !important;
+      padding: 8px 22px;
+      border-radius: 40px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .donate-btn:hover {
+      background: #b56a1a;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(185, 106, 26, 0.3);
+    }
+
+    .donate-btn::after {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #6b3a1c;
+      transition: 0.2s;
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      background: linear-gradient(135deg, #fff3e8 0%, #fde9db 100%);
+      padding: 60px 0 70px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      flex: 1.2;
+    }
+
+    .hero-badge {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background: rgba(217, 140, 43, 0.15);
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 40px;
+      color: #9b4b20;
+      font-weight: 700;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #4e2b1a;
+      margin: 20px 0 16px;
+      line-height: 1.2;
+    }
+
+    .hero-title span {
+      color: #d68b3a;
+    }
+
+    .hero-desc {
+      font-size: 1rem;
+      color: #5a3e2c;
+      margin-bottom: 32px;
+      max-width: 90%;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: #d68b3a;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 50px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+      box-shadow: 0 5px 15px rgba(199, 110, 31, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: #b96e24;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(199, 110, 31, 0.3);
+    }
+
+    .btn-outline {
+      border: 2px solid #d68b3a;
+      background: transparent;
+      padding: 10px 26px;
+      border-radius: 50px;
+      color: #b25d20;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .btn-outline:hover {
+      background: #d68b3a20;
+      transform: translateY(-2px);
+    }
+
+    .hero-image {
+      flex: 0.9;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 30px;
+      box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.2);
+      border: 4px solid #fffaef;
+      transition: transform 0.4s;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.02);
+    }
+
+    /* ========== SECTIONS ========== */
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #3b281c;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .section-sub {
+      text-align: center;
+      color: #b5713b;
+      font-weight: 500;
+      margin-bottom: 48px;
+      letter-spacing: 0.5px;
+    }
+
+    /* About Section */
+    .about-wrapper {
+      width: 100%;
+    }
+    
+    .about-grid {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+      font-size: 1rem;
+      color: #4f3725;
+      line-height: 1.6;
+    }
+
+    .about-features-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 28px;
+    }
+
+    .about-feature {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      background: #fffaf5;
+      padding: 12px 18px;
+      border-radius: 20px;
+      transition: all 0.3s;
+      border: 1px solid #f0e2d0;
+    }
+
+    .about-feature:hover {
+      transform: translateX(5px);
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .feature-icon {
+      background: #f7e5d4;
+      width: 52px;
+      height: 52px;
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: #cf7f32;
+      flex-shrink: 0;
+    }
+
+    .feature-text {
+      flex: 1;
+    }
+    
+    .feature-text strong {
+      font-size: 1.05rem;
+      color: #5a3520;
+      display: block;
+      margin-bottom: 4px;
+    }
+    
+    .feature-text span {
+      font-size: 0.9rem;
+      color: #7a5a42;
+    }
+
+    .about-img {
+      flex: 1;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      min-width: 280px;
+    }
+
+    .about-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: 0.4s;
+    }
+
+    .about-img img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Cards */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 28px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.05);
+      transition: all 0.4s;
+      border: 1px solid #f3e2d2;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 40px -12px rgba(0,0,0,0.15);
+    }
+
+    .card-icon {
+      font-size: 2.8rem;
+      color: #d98c2b;
+      margin-bottom: 20px;
+    }
+
+    /* Timings */
+    .timing-location {
+      background: #fff6ed;
+      border-radius: 48px;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    }
+
+    .timing-box, .location-box {
+      flex: 1;
+      padding: 40px 30px;
+    }
+
+    .timing-box h3, .location-box h3 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .schedule {
+      list-style: none;
+    }
+
+    .schedule li {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px dashed #eddccf;
+      font-weight: 500;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* Contact Us Section */
+    .contact-section {
+      background: #fff7f0;
+    }
+    .contact-wrapper {
+      background: white;
+      border-radius: 48px;
+      overflow: hidden;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    }
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .contact-info-box {
+      flex: 1;
+      padding: 45px 40px;
+      background: #fffaf3;
+    }
+    .contact-info-box h3 {
+      font-size: 1.8rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 25px;
+      color: #4e2b1a;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .contact-details-list {
+      list-style: none;
+      margin-bottom: 30px;
+    }
+    .contact-details-list li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 22px;
+      font-size: 1rem;
+      color: #5a3e2c;
+    }
+    .contact-details-list li i {
+      width: 38px;
+      height: 38px;
+      background: #f0e0d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #c97e2c;
+      font-size: 1.1rem;
+    }
+    .map-box {
+      flex: 1;
+      padding: 45px 40px;
+      background: #fffaf3;
+    }
+    .map-box h3 {
+      font-size: 1.8rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
+      color: #4e2b1a;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .map-frame {
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      margin-top: 15px;
+    }
+    .map-frame iframe {
+      width: 100%;
+      height: 280px;
+      border: 0;
+      display: block;
+    }
+    .map-note {
+      margin-top: 15px;
+      font-size: 0.85rem;
+      color: #b5713b;
+    }
+    .social-contact {
+      margin-top: 25px;
+      display: flex;
+      gap: 15px;
+    }
+    .social-contact a {
+      width: 40px;
+      height: 40px;
+      background: #f0e0d0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #c97e2c;
+      font-size: 1.2rem;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    .social-contact a:hover {
+      background: #d68b3a;
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    /* Gallery */
+    .gallery-preview {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      border-radius: 24px;
+      overflow: hidden;
+      height: 220px;
+      background: #e9d9cb;
+      transition: 0.3s;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    /* Donation */
+    .donation-cta {
+      background: linear-gradient(120deg, #e3cdb5, #ffe6d6);
+      border-radius: 48px;
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    .donation-options {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin: 35px 0 20px;
+    }
+
+    .donate-card {
+      background: white;
+      padding: 12px 28px;
+      border-radius: 80px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+    }
+
+    .donate-card:hover {
+      background: #d68b3a;
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    /* Footer */
+    footer {
+      background: #241c15;
+      color: #e2cfbc;
+      padding: 50px 0 30px;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .footer-logo h3 {
+      font-size: 1.6rem;
+      color: #f3cd9b;
+    }
+
+    .social-icons a {
+      color: #e2cfbc;
+      margin-right: 18px;
+      font-size: 1.4rem;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .social-icons a:hover {
+      color: #f4b860;
+      transform: translateY(-3px);
+    }
+
+    .footer-copyright {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #3f2e21;
+      font-size: 0.85rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .about-grid {
+        gap: 35px;
+      }
+    }
+    
+    @media (max-width: 900px) {
+      .container {
+        padding: 0 20px;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background: #fffaf3;
+        padding: 20px 0;
+        margin-top: 16px;
+        gap: 18px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      .hero-desc {
+        max-width: 100%;
+      }
+      .hero-grid {
+        flex-direction: column-reverse;
+      }
+      .hero-content {
+        text-align: center;
+      }
+      .hero-buttons {
+        justify-content: center;
+      }
+      .section-title {
+        font-size: 1.8rem;
+      }
+      .timing-box, .location-box {
+        padding: 30px 20px;
+      }
+      .timing-box h3, .location-box h3 {
+        font-size: 1.4rem;
+      }
+      .schedule li {
+        font-size: 0.85rem;
+      }
+      .logo-text h1 {
+        font-size: 1.2rem;
+      }
+      .logo-icon {
+        font-size: 1.6rem;
+      }
+      
+      .about-grid {
+        flex-direction: column;
+      }
+      .about-text {
+        order: 1;
+        width: 100%;
+      }
+      .about-img {
+        order: 2;
+        width: 100%;
+        margin-top: 20px;
+      }
+      .about-feature {
+        padding: 10px 15px;
+      }
+      .feature-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+      }
+      .feature-text strong {
+        font-size: 1rem;
+      }
+      
+      .contact-grid {
+        flex-direction: column;
+      }
+      .contact-info-box, .map-box {
+        padding: 35px 25px;
+      }
+    }
+
+    @media (max-width: 580px) {
+      section {
+        padding: 50px 0;
+      }
+      .hero-title {
+        font-size: 1.8rem;
+      }
+      .btn-primary, .btn-outline {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+      .donation-cta {
+        padding: 30px 20px;
+      }
+      .donate-card {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+      }
+      .gallery-item {
+        height: 180px;
+      }
+      .about-feature {
+        flex-direction: row;
+        text-align: left;
+      }
+      .timing-box, .location-box {
+        padding: 25px 18px;
+      }
+      .schedule li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+      .schedule li span:first-child {
+        font-weight: 700;
+        color: #8b5a3c;
+      }
+      .timing-box h3, .location-box h3 {
+        font-size: 1.3rem;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about-features-container {
+        gap: 15px;
+      }
+      .about-feature {
+        padding: 12px 12px;
+      }
+      .feature-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+      }
+      .feature-text strong {
+        font-size: 0.95rem;
+      }
+      .feature-text span {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <div class="logo-icon"><i class="fas fa-om"></i></div>
+        <div class="logo-text">
+          <h1>Shri Rameshwar Mandir</h1>
+          <p>Śrī Mahādev Mandir · Divine Abode</p>
+        </div>
+      </div>
+      <div class="menu-toggle" id="mobileMenu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navList">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#darshan">Pooja Timings</a></li>
+        <li><a href="#darshan">Darshan Timings</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#donate" class="donate-btn">Donate <i class="fas fa-heart"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+        <span class="hero-badge"><i class="fas fa-shiva"></i> Har Har Mahadev</span>
+        <h1 class="hero-title">Welcome to <span>Temple of Mahadev</span> <br>Shri Rameshwar Mandir</h1>
+        <p class="hero-desc">A sacred abode of Lord Shiva where peace, devotion, and tradition meet. Experience divine serenity and timeless rituals since 1876.</p>
+        <div class="hero-buttons">
+          <a href="#darshan" class="btn-primary">Plan Your Visit</a>
+          <a href="#services" class="btn-outline">View Sevas</a>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+        <img src="public/images/hero-temple.jpg" alt="Shri Rameshwar Mandir Temple" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container about-wrapper">
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+          <h2 class="section-title" style="text-align: left;">About the Temple</h2>
+          <p>Shri Rameshwar Mandir, also known as the Temple of Mahadev, is a divine place of worship dedicated to Lord Shiva in his form as Rameshwar — the one who brings joy to Ram. Our temple stands as a symbol of faith, spirituality, and community service.</p>
+          <p>With a legacy spanning over a century, the temple conducts daily Abhishekam, Rudrabhishek, and special Maha Shivaratri celebrations. Devotees from across the region visit to seek blessings for peace, prosperity, and liberation.</p>
+          <div class="about-features-container">
+            <div class="about-feature">
+              <div class="feature-icon"><i class="fas fa-praying-hands"></i></div>
+              <div class="feature-text">
+                <strong>Daily rituals</strong>
+                <span>Panchamrit Abhishek, Bhajans, Aarti</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon"><i class="fas fa-tree"></i></div>
+              <div class="feature-text">
+                <strong>Sacred Vatika</strong>
+                <span>Meditation hall & garden for devotees</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon"><i class="fas fa-history"></i></div>
+              <div class="feature-text">
+                <strong>Since 1876</strong>
+                <span>Centuries of devotion & traditions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-img" data-aos="fade-left" data-aos-duration="800">
+          <img src="public/images/about-shivling.jpg" alt="Temple interior Shivling" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Darshan Timings & Location -->
+  <section id="darshan">
+    <div class="container">
+      <div class="timing-location" data-aos="flip-up" data-aos-duration="800">
+        <div class="timing-box">
+          <h3><i class="fas fa-clock"></i> Pooja Timings</h3>
+          <ul class="schedule">
+            <li><span>Morning Pooja</span><span>6:30 AM</span></li>
+            <li><span>Evening Pooja</span><span>6:30 PM</span></li>
+          </ul>
+        </div>
+        <div class="location-box">
+          <h3><i class="fas fa-map-marker-alt"></i> Temple Location</h3>
+          <p><i class="fas fa-temple"></i> Shri Rameshwar Mahadev Temple, XQW9+R34, Manoj Computer Center, near Old Om Coaching Classes, Shriram Nagar, Beed, Maharashtra 431122</p>
+          <p><i class="fas fa-phone-alt"></i> +91-XXXX-XXXXXX</p>
+          <p><i class="fas fa-envelope"></i> info@shrirameshwarmahadev.org</p>
+          <a href="#contact" class="map-link" style="color:#d68b3a; font-weight:600; text-decoration:none; display:inline-block; margin-top:12px;"><i class="fas fa-directions"></i> View Full Contact & Map →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-wrapper" data-aos="fade-up">
+        <div class="contact-grid">
+          <div class="contact-info-box">
+            <h3><i class="fas fa-address-card"></i> Contact Us</h3>
+            <ul class="contact-details-list">
+              <li><i class="fas fa-map-pin"></i> <span>Shri Rameshwar Mahadev Temple, XQW9+R34, Manoj Computer Center, near Old Om Coaching Classes, Shriram Nagar, Beed, Maharashtra 431122</span></li>
+              <li><i class="fas fa-phone-alt"></i> <span>+91-XXXX-XXXXXX</span></li>
+              <li><i class="fas fa-envelope"></i> <span>info@shrirameshwarmahadev.org</span></li>
+            </ul>
+            <div class="social-contact">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div style="margin-top: 25px;">
+              <a href="#donate" class="btn-primary" style="background:#b96e24;">Support Temple <i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+          <div class="map-box">
+            <h3><i class="fas fa-map-marked-alt"></i> Temple Location</h3>
+            <div class="map-frame">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15078.5!2d75.7677061!3d18.9970195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc52adcafd1afe9%3A0xeabb274359a47ec7!2sShri%20Rameshwar%20Mahadev%20Temple!5e0!3m2!1sen!2sin!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="map-note">
+              <i class="fas fa-directions"></i> Located near the main ghat road, easily accessible by auto-rickshaw and taxi.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Preview -->
+  <section id="gallery" style="background: #fff7f0;">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Glimpses of Divinity</h2>
+      <div class="section-sub" data-aos="fade-up">Sacred moments captured at Shri Rameshwar Mandir</div>
+      <div class="gallery-preview">
+        <div class="gallery-item" data-aos="zoom-in-up" data-aos-duration="600"><img src="public/images/gallery-mahashivratri.jpg" alt="Mahashivratri" loading="lazy"></div>
+        <div class="gallery-item" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="100"><img src="public/images/gallery-rudra-abhishek.jpg" alt="Abhishekam" loading="lazy"></div>
+        <div class="gallery-item" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="200"><img src="public/images/gallery-temple-spire.jpg" alt="Temple Spire" loading="lazy"></div>
+        <div class="gallery-item" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="300"><img src="public/images/gallery-bhajan-sandhya.jpg" alt="Bhajan Sandhya" loading="lazy"></div>
+      </div>
+      <div style="text-align: center; margin-top: 35px;">
+        <a href="#" class="btn-outline" style="border-radius:50px;">View Full Gallery <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Section -->
+  <section id="donate">
+    <div class="container">
+      <div class="donation-cta" data-aos="flip-left" data-aos-duration="800">
+        <h2><i class="fas fa-hand-holding-heart"></i> Support the Temple</h2>
+        <p style="max-width: 600px; margin: 12px auto;">Your contributions help maintain daily rituals, Annadaan, and temple renovations. Shri Rameshwar Mandir accepts offerings with gratitude.</p>
+        <div class="donation-options">
+          <div class="donate-card" onclick="alert('🙏 Thank you for offering ₹1001 for Annadaan Seva. You will be redirected to secure payment.')">🙏 ₹ 1001 (General Seva)</div>
+          <div class="donate-card" onclick="alert('🙏 Thank you for offering ₹ 2100 for Rudrabhishek Sponsorship.')">🕉️ ₹ 2100 (Rudrabhishek)</div>
+          <div class="donate-card" onclick="alert('🙏 Maha Abhishekam sponsorship selected.')">✨ ₹ 5100 (Maha Abhishek)</div>
+        </div>
+        <p style="margin-top: 15px; font-size:0.9rem;"><i class="fas fa-lock"></i> 100% secure donations | 80G tax exemption available</p>
+        <div style="margin-top: 25px;">
+          <button class="btn-primary" onclick="alert('Thank you for your devotion. Payment gateway coming soon. Har Har Mahadev!')">Donate Any Amount <i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <h3>Shri Rameshwar Mandir</h3>
+        <p>Temple of Mahadev — since 1876</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="#home" style="color:#e2cfbc; text-decoration:none;">Home</a> | <a href="#about" style="color:#e2cfbc; text-decoration:none;">About</a> | <a href="#services" style="color:#e2cfbc; text-decoration:none;">Sevas</a> | <a href="#contact" style="color:#e2cfbc; text-decoration:none;">Contact</a> | <a href="#donate" style="color:#e2cfbc; text-decoration:none;">Donate</a></p>
+      </div>
+      <div class="social-icons">
+        <h4>Connect with us</h4>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>© 2025 Shri Rameshwar Mandir, Mahadev Temple Trust. All rights reserved. | Har Har Mahadev 🙏</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    offset: 100,
+    duration: 800,
+    easing: 'ease-out'
+  });
+
+  const mobileBtn = document.getElementById('mobileMenu');
+  const navList = document.getElementById('navList');
+  mobileBtn.addEventListener('click', () => {
+    navList.classList.toggle('show');
+  });
+
+  // FIXED: Dynamic header offset calculation for both desktop and mobile
+  function getHeaderOffset() {
+    const header = document.querySelector('header');
+    return header ? header.offsetHeight : 80;
+  }
+
+  const navLinks = document.querySelectorAll('.nav-links a');
+  
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      if(this.getAttribute('href').startsWith('#')) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if(targetElement) {
+          const offset = getHeaderOffset();
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+          
+          // Close mobile menu if open
+          navList.classList.remove('show');
+          
+          // Update active class
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+        }
+      }
+    });
+  });
+
+  // Active nav highlight on scroll with dynamic offset
+  window.addEventListener('scroll', () => {
+    let current = '';
+    const sections = document.querySelectorAll('section');
+    const offset = getHeaderOffset();
+    const scrollPosition = window.pageYOffset + offset + 30;
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionBottom = sectionTop + section.offsetHeight;
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        current = section.getAttribute('id');
+      }
+    });
+    
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if(link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>
